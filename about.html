@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="th" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>เกี่ยวกับเรา | แนะแนวอาชีพ IT</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="/_sdk/element_sdk.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700;800&amp;family=Prompt:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+  <style>
+    body {
+      box-sizing: border-box;
+    }
+    
+    html, body {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    
+    * {
+      box-sizing: border-box;
+    }
+    
+    /* Soft Pastel Gradient Background */
+    .pastel-bg {
+      background: linear-gradient(135deg, 
+        #e0f2fe 0%,
+        #f0e6ff 35%,
+        #ffe4f3 70%,
+        #fce7f3 100%
+      );
+    }
+    
+    /* Glass Effect */
+    .glass-card {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.5);
+    }
+    
+    /* Hero Section */
+    .hero-pastel {
+      background: linear-gradient(135deg, 
+        #dbeafe 0%,
+        #e9d5ff 50%,
+        #fce7f3 100%
+      );
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .hero-pastel::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, transparent 70%);
+      animation: gentle-pulse 8s ease-in-out infinite;
+    }
+    
+    /* Animations */
+    @keyframes gentle-pulse {
+      0%, 100% { opacity: 0.3; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(1.05); }
+    }
+    
+    @keyframes fade-in-up {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    @keyframes soft-float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-8px); }
+    }
+    
+    .fade-in-section {
+      animation: fade-in-up 0.8s ease-out;
+    }
+    
+    .icon-float {
+      animation: soft-float 3s ease-in-out infinite;
+    }
+    
+    /* Navigation Underline */
+    nav a {
+      position: relative;
+      transition: all 0.3s ease;
+    }
+    
+    nav a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: linear-gradient(90deg, #a78bfa, #ec4899);
+      transition: width 0.3s ease;
+    }
+    
+    nav a:hover::after {
+      width: 100%;
+    }
+    
+    /* Content Cards */
+    .content-card {
+      transition: all 0.3s ease;
+    }
+    
+    .content-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px rgba(139, 92, 246, 0.15);
+    }
+    
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero-pastel {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+      }
+      
+      #page-title {
+        font-size: 2rem !important;
+      }
+      
+      nav {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+    }
+  </style>
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="h-full w-full pastel-bg" style="font-family: 'Prompt', sans-serif;"><!-- Header Navigation -->
+  <header class="glass-card sticky top-0 z-50 shadow-sm">
+   <div class="max-w-7xl mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
+    <div class="flex items-center gap-3">
+     <div class="bg-gradient-to-br from-violet-300 to-pink-300 p-3 rounded-2xl shadow-lg icon-float"><span class="text-2xl">🎓</span>
+     </div>
+     <div>
+      <h1 id="site-title" class="font-bold text-lg text-violet-900">เว็บไซต์แนะแนวอาชีพและการศึกษาต่อ</h1>
+      <p class="text-xs text-violet-700">สำหรับ ปวช. คอมพิวเตอร์ธุรกิจ</p>
+     </div>
+    </div>
+    <nav class="flex space-x-6 text-sm font-medium"><a href="index02.html" class="text-violet-700 hover:text-violet-900">หน้าแรก</a> <a href="2.12.html" class="text-violet-700 hover:text-violet-900">10 อาชีพน่าสนใจ</a> <a href="11.1.html" class="text-violet-700 hover:text-violet-900">ศึกษาต่อ</a> <a href="about.html" class="text-violet-900 font-semibold">เกี่ยวกับเรา</a>
+    </nav>
+   </div>
+  </header><!-- Hero Section -->
+  <section class="hero-pastel py-16 text-center relative">
+   <div class="max-w-5xl mx-auto px-6 relative z-10">
+    <h2 id="page-title" class="text-5xl md:text-6xl font-bold mb-4 text-violet-900 leading-tight" style="font-family: 'Kanit', sans-serif;">เกี่ยวกับเรา</h2>
+    <p id="page-subtitle" class="text-xl md:text-2xl text-violet-800 font-light">เว็บไซต์แนะแนวอาชีพและการศึกษาต่อ สำหรับผู้สำเร็จ ปวช. สาขาคอมพิวเตอร์ธุรกิจ</p>
+   </div>
+  </section><!-- Main Content -->
+  <main class="max-w-5xl mx-auto px-6 py-16 space-y-10 pb-32"><!-- Introduction Section -->
+   <section class="content-card glass-card rounded-3xl p-8 md:p-10 shadow-lg fade-in-section">
+    <div class="flex items-start gap-4 mb-6">
+     <div class="bg-gradient-to-br from-blue-200 to-violet-200 p-4 rounded-2xl shadow-md icon-float"><span class="text-4xl">📚</span>
+     </div>
+     <h3 id="intro-title" class="text-3xl font-bold text-violet-900 mt-2" style="font-family: 'Kanit', sans-serif;">ความเป็นมาของเว็บไซต์</h3>
+    </div>
+    <div class="space-y-4 text-gray-700 leading-relaxed text-base md:text-lg">
+     <p>ในยุคปัจจุบัน เทคโนโลยีสารสนเทศมีบทบาทสำคัญต่อการดำรงชีวิต การศึกษา และการประกอบอาชีพเป็นอย่างมาก ซึ่งเป็นช่วงเวลาสำคัญในการตัดสินใจว่าจะศึกษาต่อในระดับที่สูงขึ้น หรือออกไปประกอบอาชีพในสายงานที่เกี่ยวข้อง</p>
+     <p>อย่างไรก็ตามนักเรียนจำนวนไม่น้อยยังขาดข้อมูลที่ถูกต้อง ครบถ้วน และเข้าถึงง่ายเกี่ยวกับทางเลือกการศึกษาต่อหรือการประกอบอาชีพที่เหมาะสมกับสายวิชาที่เรียนมา บางคนไม่ทราบถึงเส้นทางอาชีพที่เกี่ยวข้องกับคอมพิวเตอร์ธุรกิจ หรือไม่มีข้อมูลแนะแนวการศึกษาต่อที่ชัดเจน ส่งผลให้ตัดสินใจผิดพลาดหรือขาดความมั่นใจในอนาคตของตนเอง</p>
+     <p>ด้วยเหตุนี้ ผู้จัดทำจึงมีแนวคิดที่จะพัฒนา <span class="font-semibold text-violet-900">เว็บไซต์แนะนำการประกอบอาชีพและการศึกษาต่อ</span> สำหรับผู้สำเร็จการศึกษาระดับปวช. สาขาวิชาคอมพิวเตอร์ธุรกิจ โดยมุ่งหวังให้เป็นแหล่งข้อมูลที่เชื่อถือได้ ใช้งานง่าย และตอบโจทย์นักเรียนที่กำลังอยู่ในช่วงวางแผนอนาคตของตน</p>
+    </div>
+   </section><!-- Mission Section -->
+   <section class="content-card glass-card rounded-3xl p-8 shadow-lg fade-in-section">
+    <div class="flex items-center gap-3 mb-6">
+     <div class="bg-gradient-to-br from-pink-200 to-rose-200 p-3 rounded-2xl shadow-md icon-float"><span class="text-3xl">🎯</span>
+     </div>
+     <h3 class="text-2xl font-bold text-violet-900" style="font-family: 'Kanit', sans-serif;">วัตถุประสงค์หลัก</h3>
+    </div>
+    <ul class="space-y-3 text-gray-700 leading-relaxed">
+     <li class="flex items-start gap-3"><span class="text-violet-500 mt-1">✦</span> <span>ให้ข้อมูลที่ถูกต้องและทันสมัยเกี่ยวกับอาชีพด้าน IT</span></li>
+     <li class="flex items-start gap-3"><span class="text-violet-500 mt-1">✦</span> <span>แนะแนวการศึกษาต่อที่เหมาะสมกับสายวิชา</span></li>
+     <li class="flex items-start gap-3"><span class="text-violet-500 mt-1">✦</span> <span>สร้างความมั่นใจในการวางแผนอนาคต</span></li>
+     <li class="flex items-start gap-3"><span class="text-violet-500 mt-1">✦</span> <span>เป็นแหล่งเรียนรู้ที่เข้าถึงง่ายสำหรับนักศึกษา</span></li>
+    </ul>
+   </section><!-- Team Section -->
+   <section class="content-card glass-card rounded-3xl p-8 md:p-10 shadow-lg fade-in-section">
+    <div class="flex items-center gap-3 mb-8">
+     <div class="bg-gradient-to-br from-purple-200 to-indigo-200 p-3 rounded-2xl shadow-md icon-float" style="animation-delay: 1.5s;"><span class="text-3xl">👥</span>
+     </div>
+     <h3 class="text-3xl font-bold text-violet-900" style="font-family: 'Kanit', sans-serif;">ทีมผู้จัดทำ</h3>
+    </div>
+    <p class="text-gray-700 leading-relaxed text-lg mb-8 text-center">พวกเราคือกลุ่มนักศึกษาที่มีความตั้งใจจะสร้างสรรค์เว็บไซต์ที่เป็นประโยชน์ให้น้อง ๆ </p><!-- Team Members Grid -->
+    <div class="grid md:grid-cols-3 gap-8 mb-8"><!-- Member 1 -->
+     <div class="bg-gradient-to-br from-violet-50 to-purple-50 rounded-2xl p-6 border-2 border-violet-200 hover:border-violet-400 transition-all duration-300">
+      <div class="aspect-square bg-gradient-to-br from-violet-200 to-purple-200 rounded-2xl mb-4 flex items-center justify-center overflow-hidden"><span class="text-6xl">👤</span> <!-- ใส่รูปที่นี่: <img src=" D:\Income and expense program work\photo\01.png " alt="ชื่อสมาชิก 1" class="w-full h-full object-cover"> -->
+      </div>
+      <h4 class="font-bold text-lg text-violet-900 text-center mb-2">นายธนเดช โภชนุกูล เลขที่1</h4>
+      <p class="text-gray-600 text-sm text-center">หัวหน้ากลุ่ม/ทำชิ้นงาน</p>
+     </div><!-- Member 2 -->
+     <div class="bg-gradient-to-br from-pink-50 to-rose-50 rounded-2xl p-6 border-2 border-pink-200 hover:border-pink-400 transition-all duration-300">
+      <div class="aspect-square bg-gradient-to-br from-pink-200 to-rose-200 rounded-2xl mb-4 flex items-center justify-center overflow-hidden"><span class="text-6xl">👤</span> <!-- ใส่รูปที่นี่: <img src="URL_รูปภาพ" alt="ชื่อสมาชิก 2" class="w-full h-full object-cover"> -->
+      </div>
+      <h4 class="font-bold text-lg text-violet-900 text-center mb-2">นายธนภัทร นันตา เลขที่5</h4>
+      <p class="text-gray-600 text-sm text-center">ตำแหน่ง/บทบาท</p>
+     </div><!-- Member 3 -->
+     <div class="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl p-6 border-2 border-blue-200 hover:border-blue-400 transition-all duration-300">
+      <div class="aspect-square bg-gradient-to-br from-blue-200 to-cyan-200 rounded-2xl mb-4 flex items-center justify-center overflow-hidden"><span class="text-6xl">👤</span> <!-- ใส่รูปที่นี่: <img src="URL_รูปภาพ" alt="ชื่อสมาชิก 3" class="w-full h-full object-cover"> -->
+      </div>
+      <h4 class="font-bold text-lg text-violet-900 text-center mb-2">ชื่อสมาชิกคนที่ 3</h4>
+      <p class="text-gray-600 text-sm text-center">ตำแหน่ง/บทบาท</p>
+     </div>
+    </div>
+    <div class="flex justify-center">
+     <div class="inline-flex items-center gap-2 bg-gradient-to-r from-violet-100 to-pink-100 px-6 py-3 rounded-full"><span class="text-2xl">💝</span> <span class="font-semibold text-violet-900">สร้างสรรค์ด้วยใจ เพื่อการศึกษา</span>
+     </div>
+    </div>
+   </section><!-- Contact Section -->
+   <section class="content-card glass-card rounded-3xl p-8 md:p-10 shadow-lg fade-in-section">
+    <div class="flex items-center gap-3 mb-6">
+     <div class="bg-gradient-to-br from-emerald-200 to-teal-200 p-3 rounded-2xl shadow-md icon-float" style="animation-delay: 2s;"><span class="text-3xl">📞</span>
+     </div>
+     <h3 class="text-3xl font-bold text-violet-900" style="font-family: 'Kanit', sans-serif;">ติดต่อเรา</h3>
+    </div>
+    <p class="text-gray-700 leading-relaxed mb-6 text-base md:text-lg">หากคุณมีคำถาม ข้อเสนอแนะ หรืออยากให้เราเพิ่มข้อมูลเพิ่มเติม สามารถติดต่อเราได้ที่:</p>
+    <div class="space-y-4">
+     <div class="flex items-center gap-4 bg-gradient-to-r from-blue-50 to-violet-50 p-4 rounded-2xl border border-violet-100"><span class="text-3xl">📧</span>
+      <div>
+       <p class="text-sm text-gray-600 font-medium">อีเมล</p><a href="mailto:ppcodffg@gmail.com" class="text-violet-700 hover:text-violet-900 font-semibold hover:underline"> ppcodffg@gmail.com </a>
+      </div>
+     </div>
+     <div class="flex items-center gap-4 bg-gradient-to-r from-pink-50 to-rose-50 p-4 rounded-2xl border border-pink-100"><span class="text-3xl">📱</span>
+      <div>
+       <p class="text-sm text-gray-600 font-medium">โทรศัพท์</p><a href="tel:+66902673725" class="text-violet-700 hover:text-violet-900 font-semibold hover:underline"> 090-267-3725 </a>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main><!-- Back to Home Button --> <button onclick="window.location.href='#'" class="fixed bottom-6 right-6 flex items-center gap-2 bg-gradient-to-r from-violet-500 to-pink-500 text-white px-6 py-3 rounded-2xl shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-violet-300 z-50">
+   <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+   </svg><span class="font-semibold">กลับหน้าหลัก</span> </button> <!-- Footer -->
+  <footer class="glass-card border-t border-violet-200 mt-16 shadow-sm">
+   <div class="max-w-7xl mx-auto px-6 py-10 text-center">
+    <div class="mb-4">
+     <div class="inline-flex items-center gap-2 mb-2"><span class="text-2xl">🎓</span> <span class="font-bold text-violet-900 text-lg">เว็บไซต์แนะแนวอาชีพและการศึกษาต่อ</span>
+     </div>
+    </div>
+    <p id="footer-text" class="text-gray-700 text-base font-medium">© <span id="year"></span> เว็บไซต์แนะแนวอาชีพและการศึกษาต่อ | สร้างสรรค์เพื่อการศึกษา</p>
+   </div>
+  </footer>
+  <script>
+    // Set current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const defaultConfig = {
+      background_color: '#f5f0ff',
+      primary_color: '#a78bfa',
+      accent_color: '#ec4899',
+      text_color: '#1f2937',
+      card_background: '#ffffff',
+      site_title: 'เว็บไซต์แนะแนวอาชีพและการศึกษาต่อ',
+      page_title: 'เกี่ยวกับเรา',
+      page_subtitle: 'เว็บไซต์แนะแนวอาชีพและการศึกษาต่อ สำหรับผู้สำเร็จ ปวช. สาขาคอมพิวเตอร์ธุรกิจ',
+      intro_title: 'ความเป็นมาของเว็บไซต์',
+      footer_text: '© 2024 เว็บไซต์แนะแนวอาชีพและการศึกษาต่อ | สร้างสรรค์เพื่อการศึกษา',
+      font_family: 'Prompt',
+      font_size: 16
+    };
+
+    async function onConfigChange(config) {
+      const baseFontSize = config.font_size || defaultConfig.font_size;
+      const customFont = config.font_family || defaultConfig.font_family;
+      const fontStack = `'${customFont}', 'Kanit', sans-serif`;
+      
+      // Update text content
+      document.getElementById('site-title').textContent = config.site_title || defaultConfig.site_title;
+      document.getElementById('page-title').textContent = config.page_title || defaultConfig.page_title;
+      document.getElementById('page-subtitle').textContent = config.page_subtitle || defaultConfig.page_subtitle;
+      document.getElementById('intro-title').textContent = config.intro_title || defaultConfig.intro_title;
+      document.getElementById('footer-text').innerHTML = `© <span id="year">${new Date().getFullYear()}</span> ${config.footer_text || defaultConfig.footer_text}`;
+      
+      // Update fonts
+      document.body.style.fontFamily = fontStack;
+      document.body.style.fontSize = `${baseFontSize}px`;
+      
+      // Scale text elements
+      document.getElementById('page-title').style.fontSize = `${baseFontSize * 3}px`;
+      document.getElementById('page-subtitle').style.fontSize = `${baseFontSize * 1.25}px`;
+      
+      document.querySelectorAll('h3').forEach(h => {
+        h.style.fontSize = `${baseFontSize * 1.875}px`;
+      });
+      
+      document.querySelectorAll('h4').forEach(h => {
+        h.style.fontSize = `${baseFontSize * 1.125}px`;
+      });
+      
+      document.querySelectorAll('p, li').forEach(el => {
+        if (!el.classList.contains('text-xs') && !el.classList.contains('text-sm')) {
+          el.style.fontSize = `${baseFontSize}px`;
+        }
+      });
+      
+      // Update colors
+      const bgColor = config.background_color || defaultConfig.background_color;
+      const accentColor = config.accent_color || defaultConfig.accent_color;
+      const primaryColor = config.primary_color || defaultConfig.primary_color;
+      
+      document.body.style.background = `linear-gradient(135deg, #e0f2fe 0%, ${bgColor} 35%, ${accentColor}30 70%, ${accentColor}20 100%)`;
+      
+      document.querySelectorAll('.glass-card').forEach(card => {
+        card.style.backgroundColor = `${config.card_background || defaultConfig.card_background}dd`;
+      });
+      
+      const heroSection = document.querySelector('.hero-pastel');
+      if (heroSection) {
+        heroSection.style.background = `linear-gradient(135deg, #dbeafe 0%, ${primaryColor}40 50%, ${accentColor}30 100%)`;
+      }
+    }
+
+    if (window.elementSdk) {
+      window.elementSdk.init({
+        defaultConfig,
+        onConfigChange,
+        mapToCapabilities: (config) => ({
+          recolorables: [
+            {
+              get: () => config.background_color || defaultConfig.background_color,
+              set: (value) => {
+                window.elementSdk.config.background_color = value;
+                window.elementSdk.setConfig({ background_color: value });
+              }
+            },
+            {
+              get: () => config.card_background || defaultConfig.card_background,
+              set: (value) => {
+                window.elementSdk.config.card_background = value;
+                window.elementSdk.setConfig({ card_background: value });
+              }
+            },
+            {
+              get: () => config.text_color || defaultConfig.text_color,
+              set: (value) => {
+                window.elementSdk.config.text_color = value;
+                window.elementSdk.setConfig({ text_color: value });
+              }
+            },
+            {
+              get: () => config.primary_color || defaultConfig.primary_color,
+              set: (value) => {
+                window.elementSdk.config.primary_color = value;
+                window.elementSdk.setConfig({ primary_color: value });
+              }
+            },
+            {
+              get: () => config.accent_color || defaultConfig.accent_color,
+              set: (value) => {
+                window.elementSdk.config.accent_color = value;
+                window.elementSdk.setConfig({ accent_color: value });
+              }
+            }
+          ],
+          borderables: [],
+          fontEditable: {
+            get: () => config.font_family || defaultConfig.font_family,
+            set: (value) => {
+              window.elementSdk.config.font_family = value;
+              window.elementSdk.setConfig({ font_family: value });
+            }
+          },
+          fontSizeable: {
+            get: () => config.font_size || defaultConfig.font_size,
+            set: (value) => {
+              window.elementSdk.config.font_size = value;
+              window.elementSdk.setConfig({ font_size: value });
+            }
+          }
+        }),
+        mapToEditPanelValues: (config) => new Map([
+          ['site_title', config.site_title || defaultConfig.site_title],
+          ['page_title', config.page_title || defaultConfig.page_title],
+          ['page_subtitle', config.page_subtitle || defaultConfig.page_subtitle],
+          ['intro_title', config.intro_title || defaultConfig.intro_title],
+          ['footer_text', config.footer_text || defaultConfig.footer_text]
+        ])
+      });
+    }
+  </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9be3db5a461c45cf',t:'MTc2ODQ2NDIwOS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

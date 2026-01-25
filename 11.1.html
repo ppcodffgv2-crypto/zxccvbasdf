@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="th" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>เปิดโลกการศึกษาระดับสูง</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="/_sdk/element_sdk.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;500;600;700;800;900&amp;family=Prompt:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+  <style>
+    body {
+      box-sizing: border-box;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-15px); }
+    }
+
+    @keyframes fade-in-up {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .animate-float { 
+      animation: float 5s ease-in-out infinite; 
+    }
+
+    .animate-fade-in-up { 
+      animation: fade-in-up 0.8s ease-out forwards; 
+    }
+    
+    .animate-fade-in-up-delay-1 { 
+      animation: fade-in-up 0.8s ease-out 0.2s forwards; 
+      opacity: 0;
+    }
+    
+    .animate-fade-in-up-delay-2 { 
+      animation: fade-in-up 0.8s ease-out 0.4s forwards; 
+      opacity: 0;
+    }
+    
+    .animate-fade-in-up-delay-3 { 
+      animation: fade-in-up 0.8s ease-out 0.6s forwards; 
+      opacity: 0;
+    }
+
+    .glass-effect {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(12px);
+    }
+
+    .card-hover {
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .card-hover:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 50px rgba(14, 165, 233, 0.2);
+    }
+
+    .text-gradient {
+      background: linear-gradient(135deg, #0ea5e9 0%, #8b5cf6 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .nav-link {
+      position: relative;
+    }
+    
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: linear-gradient(90deg, #0ea5e9, #8b5cf6);
+      transition: 0.3s;
+    }
+    
+    .nav-link:hover::after { 
+      width: 100%; 
+    }
+  </style>
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+  <style>@view-transition { navigation: auto; }</style>
+ </head>
+ <body class="h-full bg-gradient-to-br from-sky-50 via-white to-purple-50 text-gray-800" style="font-family: 'Prompt', 'Noto Sans Thai', sans-serif;"><!-- Background Decorations -->
+  <div class="fixed inset-0 overflow-hidden pointer-events-none">
+   <div class="absolute top-20 left-10 w-72 h-72 bg-gradient-to-r from-sky-300 to-blue-400 rounded-full opacity-20 blur-3xl animate-float"></div>
+   <div class="absolute bottom-20 right-10 w-96 h-96 bg-gradient-to-r from-purple-300 to-pink-400 rounded-full opacity-20 blur-3xl animate-float" style="animation-delay: -2.5s;"></div>
+  </div><!-- Main Container -->
+  <div class="relative z-10 h-full w-full overflow-auto"><!-- Header -->
+   <header class="glass-effect border-b sticky top-0 z-50 shadow-sm">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
+     <div class="flex items-center gap-3">
+      <div class="bg-gradient-to-br from-sky-400 to-indigo-500 text-white p-3 rounded-2xl shadow-lg">
+       🎓
+      </div>
+      <div>
+       <p id="site-title" class="font-bold text-xl text-gradient">แนะแนวศึกษาต่อ</p>
+       <p id="site-subtitle" class="text-xs text-gray-500">สำหรับ ปวช. คอมพิวเตอร์ธุรกิจ</p>
+      </div>
+     </div>
+     <nav class="flex flex-wrap justify-center gap-4 md:gap-8 text-sm"><a href="index02.html" class="nav-link text-gray-600 hover:text-sky-600 font-medium">หน้าแรก</a> <a href="2.12.html" class="nav-link text-gray-600 hover:text-sky-600 font-medium">อาชีพแนะนำ</a> <a href="11.1.html" class="nav-link text-sky-600 font-semibold">ศึกษาต่อ</a> <a href="about.html" class="nav-link text-gray-600 hover:text-sky-600 font-medium">เกี่ยวกับเรา</a>
+     </nav>
+    </div>
+   </header><!-- Hero Section -->
+   <section class="py-16 px-6 text-center">
+    <h1 class="animate-fade-in-up text-4xl md:text-6xl font-extrabold mb-6" style="line-height: 1.5;"><span id="hero-title-1" class="text-gradient">ก้าวต่อไป</span><br><span id="hero-title-2" class="text-gradient">สู่การศึกษาที่สูงขึ้น</span></h1>
+    <p id="hero-description" class="animate-fade-in-up-delay-1 text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">เส้นทางการศึกษาต่อสำหรับผู้จบ ปวช,ปวส. คอมพิวเตอร์ธุรกิจ<br>
+      พร้อมรายชื่อมหาวิทยาลัยและวิทยาลัยที่เปิดรับจริง</p>
+   </section><!-- Main Content -->
+   <main class="max-w-6xl mx-auto px-4 py-8"><!-- ปวส / ป.ตรี -->
+    <div class="grid md:grid-cols-2 gap-8 mb-16">
+     <div class="animate-fade-in-up card-hover glass-effect rounded-2xl p-8 shadow-lg border border-sky-100">
+      <h2 class="text-2xl font-bold mb-4">📘 เรียนต่อ ปวส.</h2>
+      <p class="text-gray-600 mb-4">ต่อยอดตรงสายจาก ปวช. เน้นพัฒนาเฉพาะทาง<br>
+        หลายสถาบันสามารถเทียบโอนรายวิชา และต่อ ป.ตรี ได้</p>
+      <ul class="space-y-2 text-gray-700">
+       <li class="flex items-center gap-2"><span class="text-sky-500">✓</span> คอมพิวเตอร์ธุรกิจ</li>
+       <li class="flex items-center gap-2"><span class="text-sky-500">✓</span> เทคโนโลยีสารสนเทศ (IT)</li>
+       <li class="flex items-center gap-2"><span class="text-sky-500">✓</span> มัลติมีเดีย / กราฟิก</li>
+       <li class="flex items-center gap-2"><span class="text-sky-500">✓</span> โปรแกรมเมอร์</li>
+      </ul>
+     </div>
+     <div class="animate-fade-in-up-delay-1 card-hover glass-effect rounded-2xl p-8 shadow-lg border border-purple-100">
+      <h2 class="text-2xl font-bold mb-4">🎓 เรียนต่อ ป.ตรี</h2>
+      <p class="text-gray-600 mb-4">เรียนต่อปริญญาตรีในมหาวิทยาลัยของรัฐและเอกชน<br>
+        ที่เปิดรับผู้จบ ปวช. และมีระบบเทียบโอนหน่วยกิต</p>
+      <ul class="space-y-2 text-gray-700">
+       <li class="flex items-center gap-2"><span class="text-purple-500">✓</span> วิทยาการคอมพิวเตอร์</li>
+       <li class="flex items-center gap-2"><span class="text-purple-500">✓</span> IT</li>
+       <li class="flex items-center gap-2"><span class="text-purple-500">✓</span> วิศวกรรมคอม</li>
+       <li class="flex items-center gap-2"><span class="text-purple-500">✓</span> วิศวกรรมซอฟต์แวร์</li>
+      </ul>
+     </div>
+    </div><!-- มหาวิทยาลัย -->
+    <section class="mb-16">
+     <h2 class="text-3xl font-bold text-center mb-4 text-gradient">สถาบันที่เปิดรับผู้จบ ปวช.</h2>
+     <p class="text-center text-gray-600 mb-10">คลิกชื่อสถาบันเพื่อดูรายละเอียดสาขา หรือสมัครเรียน</p>
+     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6"><a href="https://bus.rmutt.ac.th/apply-2569/" target="_blank" rel="noopener noreferrer" class="card-hover glass-effect p-6 rounded-2xl border border-sky-50"> <p class="font-semibold text-lg text-gray-800">มหาวิทยาลัยเทคโนโลยีราชมงคล</p><p class="text-sm text-gray-500 mt-1">คณะบริหารธุรกิจ</p></a> <a href="https://mangt.pcru.ac.th/fields/bc/" target="_blank" rel="noopener noreferrer" class="card-hover glass-effect p-6 rounded-2xl border border-sky-50"> <p class="font-semibold text-lg text-gray-800">มหาวิทยาลัยราชภัฏเพชรบูรณ์</p><p class="text-sm text-gray-500 mt-1">คอมพิวเตอร์ธุรกิจ</p></a> <a href="https://bait.rmutsb.ac.th/" target="_blank" rel="noopener noreferrer" class="card-hover glass-effect p-6 rounded-2xl border border-sky-50"> <p class="font-semibold text-lg text-gray-800">มทร.สุวรรณภูมิ</p><p class="text-sm text-gray-500 mt-1">บริหารธุรกิจ / IT</p></a> <a href="https://www3.pongsawadi.ac.th/psc2023/สมัครเรียนนักศึกษาใหม่/" target="_blank" rel="noopener noreferrer" class="card-hover glass-effect p-6 rounded-2xl border border-purple-50"> <p class="font-semibold text-lg text-gray-800">วิทยาลัยพงษ์สวัสดิ์</p><p class="text-sm text-gray-500 mt-1">เอกชน • นนทบุรี</p></a> <a href="https://www.xn--42cgc2dacmb0fadnteduot7a4kil7brs4z2bb81a.com/" target="_blank" rel="noopener noreferrer" class="card-hover glass-effect p-6 rounded-2xl border border-purple-50"> <p class="font-semibold text-lg text-gray-800">วิทยาลัยจรัลสนิทวงศ์</p><p class="text-sm text-gray-500 mt-1">เอกชน • กรุงเทพฯ</p></a> <a href="https://www.tni.ac.th/dt/" target="_blank" rel="noopener noreferrer" class="card-hover glass-effect p-6 rounded-2xl border border-purple-50"> <p class="font-semibold text-lg text-gray-800">สถาบันเทคโนโลยีไทย-ญี่ปุ่น</p><p class="text-sm text-gray-500 mt-1">สาขา IT / ธุรกิจ</p></a>
+     </div>
+    </section><!-- เอกสาร -->
+    <div class="bg-gradient-to-r from-orange-50 to-amber-50 rounded-2xl p-8 mb-16 border border-orange-100 shadow-sm">
+     <h2 class="text-2xl font-bold mb-4 text-gray-800">📋 เอกสารที่ต้องเตรียม</h2>
+     <p class="text-gray-600 mb-6">เอกสารอาจแตกต่างกันในแต่ละสถาบัน ควรตรวจสอบจากเว็บไซต์ที่สมัคร</p>
+     <ul class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 text-gray-700">
+      <li class="flex items-center gap-2 bg-white rounded-lg p-3"><span class="text-xl">📘</span> ปพ.1</li>
+      <li class="flex items-center gap-2 bg-white rounded-lg p-3"><span class="text-xl">🪪</span> บัตรประชาชน(ตัวเอง,พ่อ,แม่)</li>
+      <li class="flex items-center gap-2 bg-white rounded-lg p-3"><span class="text-xl">🏠</span> ทะเบียนบ้าน(ตัวเอง,พ่อ,แม่)</li>
+      <li class="flex items-center gap-2 bg-white rounded-lg p-3"><span class="text-xl">📷</span> รูปถ่าย</li>
+      <li class="flex items-center gap-2 bg-white rounded-lg p-3"><span class="text-xl">🧾</span> ใบรับรองการศึกษา</li>
+      <li class="flex items-center gap-2 bg-white rounded-lg p-3"><span class="text-xl">📁</span> Portfolio (บางสาขา)</li>
+     </ul>
+    </div><!-- เคล็ดลับ -->
+    <div class="bg-gradient-to-r from-green-50 to-emerald-50 rounded-2xl p-8 mb-16 border border-green-100 shadow-sm">
+     <h2 class="text-2xl font-bold mb-6 text-gray-800">💡 เคล็ดลับสำหรับสาย ปวช.</h2>
+     <ul class="space-y-3 text-gray-700">
+      <li class="flex items-start gap-3 bg-white rounded-lg p-4"><span class="text-green-500 text-xl flex-shrink-0">✔</span> <span>เลือกสถาบันที่เปิดรับ ปวช. โดยตรง</span></li>
+      <li class="flex items-start gap-3 bg-white rounded-lg p-4"><span class="text-green-500 text-xl flex-shrink-0">✔</span> <span>เตรียม Portfolio เช่น เว็บหรือโปรแกรม</span></li>
+      <li class="flex items-start gap-3 bg-white rounded-lg p-4"><span class="text-green-500 text-xl flex-shrink-0">✔</span> <span>ฝึก HTML / CSS / Python</span></li>
+      <li class="flex items-start gap-3 bg-white rounded-lg p-4"><span class="text-green-500 text-xl flex-shrink-0">✔</span> <span>สมัครในรอบที่เหมาะสม</span></li>
+     </ul>
+    </div>
+   </main><!-- Footer -->
+   <footer class="glass-effect border-t mt-16 py-8 px-6">
+    <div class="max-w-7xl mx-auto text-center">
+     <p class="text-gray-600 mb-2"><span class="font-semibold text-gradient">แนะแนวศึกษาต่อ</span></p>
+     <p class="text-sm text-gray-500">© 2024 ข้อมูลเพื่อการศึกษาและแนะแนวอาชีพ</p>
+    </div>
+   </footer>
+  </div>
+  <script>
+    const defaultConfig = {
+      site_title: 'แนะแนวศึกษาต่อ',
+      site_subtitle: 'สำหรับ ปวช. คอมพิวเตอร์ธุรกิจ',
+      hero_title_1: 'ก้าวต่อไป',
+      hero_title_2: 'สู่การศึกษาที่สูงขึ้น',
+      hero_description: 'เส้นทางการศึกษาต่อสำหรับผู้จบ ปวช. คอมพิวเตอร์ธุรกิจ\nพร้อมรายชื่อมหาวิทยาลัยและวิทยาลัยที่เปิดรับจริง',
+      primary_color: '#0ea5e9',
+      secondary_color: '#8b5cf6',
+      background_color: '#f0f9ff',
+      text_color: '#1f2937',
+      accent_color: '#ec4899',
+      font_family: 'Prompt',
+      font_size: 16
+    };
+
+    // Initialize Element SDK
+    if (window.elementSdk) {
+      window.elementSdk.init({
+        defaultConfig,
+        onConfigChange: async (config) => {
+          // Update text content
+          const siteTitle = document.getElementById('site-title');
+          const siteSubtitle = document.getElementById('site-subtitle');
+          const heroTitle1 = document.getElementById('hero-title-1');
+          const heroTitle2 = document.getElementById('hero-title-2');
+          const heroDescription = document.getElementById('hero-description');
+          
+          if (siteTitle) siteTitle.textContent = config.site_title || defaultConfig.site_title;
+          if (siteSubtitle) siteSubtitle.textContent = config.site_subtitle || defaultConfig.site_subtitle;
+          if (heroTitle1) heroTitle1.textContent = config.hero_title_1 || defaultConfig.hero_title_1;
+          if (heroTitle2) heroTitle2.textContent = config.hero_title_2 || defaultConfig.hero_title_2;
+          if (heroDescription) {
+            const description = config.hero_description || defaultConfig.hero_description;
+            heroDescription.innerHTML = description.replace(/\n/g, '<br>');
+          }
+
+          // Apply font
+          const fontFamily = config.font_family || defaultConfig.font_family;
+          document.body.style.fontFamily = `${fontFamily}, 'Noto Sans Thai', sans-serif`;
+          
+          // Apply font size scaling
+          const fontSize = config.font_size || defaultConfig.font_size;
+          document.documentElement.style.fontSize = `${fontSize}px`;
+        },
+        mapToCapabilities: (config) => ({
+          recolorables: [
+            {
+              get: () => config.background_color || defaultConfig.background_color,
+              set: (value) => {
+                config.background_color = value;
+                window.elementSdk.setConfig({ background_color: value });
+              }
+            },
+            {
+              get: () => config.primary_color || defaultConfig.primary_color,
+              set: (value) => {
+                config.primary_color = value;
+                window.elementSdk.setConfig({ primary_color: value });
+              }
+            },
+            {
+              get: () => config.secondary_color || defaultConfig.secondary_color,
+              set: (value) => {
+                config.secondary_color = value;
+                window.elementSdk.setConfig({ secondary_color: value });
+              }
+            },
+            {
+              get: () => config.text_color || defaultConfig.text_color,
+              set: (value) => {
+                config.text_color = value;
+                window.elementSdk.setConfig({ text_color: value });
+              }
+            },
+            {
+              get: () => config.accent_color || defaultConfig.accent_color,
+              set: (value) => {
+                config.accent_color = value;
+                window.elementSdk.setConfig({ accent_color: value });
+              }
+            }
+          ],
+          borderables: [],
+          fontEditable: {
+            get: () => config.font_family || defaultConfig.font_family,
+            set: (value) => {
+              config.font_family = value;
+              window.elementSdk.setConfig({ font_family: value });
+            }
+          },
+          fontSizeable: {
+            get: () => config.font_size || defaultConfig.font_size,
+            set: (value) => {
+              config.font_size = value;
+              window.elementSdk.setConfig({ font_size: value });
+            }
+          }
+        }),
+        mapToEditPanelValues: (config) => new Map([
+          ['site_title', config.site_title || defaultConfig.site_title],
+          ['site_subtitle', config.site_subtitle || defaultConfig.site_subtitle],
+          ['hero_title_1', config.hero_title_1 || defaultConfig.hero_title_1],
+          ['hero_title_2', config.hero_title_2 || defaultConfig.hero_title_2],
+          ['hero_description', config.hero_description || defaultConfig.hero_description]
+        ])
+      });
+    }
+
+    // Smooth scroll for navigation
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+  <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9c386989f12b45a8',t:'MTc2OTM1MDgzNy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9c388b79f35645ad',t:'MTc2OTM1MjIyNy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
